@@ -1,3 +1,5 @@
+<img src=".claude-plugin/icon.png" alt="" width="128" align="right">
+
 # Claude Sound Effects
 
 A [Claude Code](https://claude.com/claude-code) plugin that plays a sound when Claude finishes a task or needs you. Start a long task, switch to another window, and come back when you hear it.
@@ -143,7 +145,10 @@ Muting with the file takes effect right away, with no restart needed.
 claude-sound-effects/
 ├── .claude-plugin/
 │   ├── plugin.json        # Plugin name, version, description
-│   └── marketplace.json   # Lets the repo be added as a marketplace
+│   ├── marketplace.json   # Lets the repo be added as a marketplace
+│   └── icon.png           # Plugin icon (1024×1024)
+├── assets/
+│   └── make_icon.py       # Draws icon.png
 ├── hooks/
 │   └── hooks.json         # Connects Claude Code events to the script
 ├── scripts/
@@ -208,6 +213,9 @@ echo '{}' | ./scripts/play-sound.sh stop
 
 # Check the plugin and marketplace manifests
 claude plugin validate --strict .
+
+# Redraw the icon after editing assets/make_icon.py (needs Pillow)
+python3 assets/make_icon.py .claude-plugin/icon.png
 ```
 
 When you release a change, bump `version` in `.claude-plugin/plugin.json` and add an entry to `CHANGELOG.md`. People who installed the plugin can get the new version by running:

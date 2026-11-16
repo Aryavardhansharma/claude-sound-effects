@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added a plugin icon (`.claude-plugin/icon.png`) and the script that draws it (`assets/make_icon.py`).
+
 ## 0.1.0 (2026-11-17)
 
 First release.
