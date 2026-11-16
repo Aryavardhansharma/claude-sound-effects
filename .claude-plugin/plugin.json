@@ -1,0 +1,16 @@
+{
+  "name": "sound-effects",
+  "version": "0.1.0",
+  "description": "Plays a sound when Claude Code finishes a task or needs your attention.",
+  "author": {
+    "name": "Aryavardhansharma"
+  },
+  "keywords": [
+    "sound",
+    "notifications",
+    "hooks"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Aryavardhansharma/claude-sound-effects",
+  "repository": "https://github.com/Aryavardhansharma/claude-sound-effects"
+}

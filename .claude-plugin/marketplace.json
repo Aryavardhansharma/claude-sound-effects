@@ -1,0 +1,14 @@
+{
+  "name": "sound-effects-marketplace",
+  "description": "Sound effects for Claude Code.",
+  "owner": {
+    "name": "Aryavardhansharma"
+  },
+  "plugins": [
+    {
+      "name": "sound-effects",
+      "source": "./",
+      "description": "Plays a sound when Claude Code finishes a task or needs your attention."
+    }
+  ]
+}
